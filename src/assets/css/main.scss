@@ -1,0 +1,40 @@
+@use 'fonts';
+
+:root {
+  /* Colors */
+
+  /* Dark Palette */
+  --dark-green: #118b12;
+  --dark-red: #8b114d;
+  --dark-purple: #4f118b;
+
+  /* Light Palette */
+  --light-red: #e29ea1;
+  --light-green: #9ee2bd;
+  --light-blue: #9ec3e2;
+
+  /* Neutral */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Typography */
+  --primary-sans: 'Noto Sans', system-ui, sans-serif;
+
+  /* Other */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: var(--primary-sans);
+}
