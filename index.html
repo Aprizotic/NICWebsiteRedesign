@@ -12,11 +12,32 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
+      <button class="header__menu-button"
+              aria-label="Open Menu">
+        <svg class="header__menu-icon" viewBox="-2.4 -2.4 28.80 28.80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#0c0310" stroke="#0c0310"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.144"></g><g id="SVGRepo_iconCarrier"> <title>Menu</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Menu"> <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"> </rect> <line x1="5" y1="7" x2="19" y2="7" id="Path" stroke="currentColor" stroke-width="2" stroke-linecap="round"> </line> <line x1="5" y1="17" x2="19" y2="17" id="Path" stroke="currentColor" stroke-width="2" stroke-linecap="round"> </line> <line x1="5" y1="12" x2="19" y2="12" id="Path" stroke="currentColor" stroke-width="2" stroke-linecap="round"> </line> </g> </g> </g></svg>
+      </button>
+
+      <abbr title="Northolt Islamic Centre"
+            class="header__title">NIC</abbr>
+
+      <img src="src/assets/images/Logo.png"
+           width="974"
+           height="974"
+           alt=""
+           class="header__logo">
     </header>
 
-    <main>
+    <main class="grid">
+      <div class="wrapper">
+        <img src="src/assets/images/Masjid.jpg"
+            width="2048"
+            height="1153"
+            class="grid__img">
+        <iframe class="prayer-table" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation" frameborder="1" allowfullscreen="" scrollable="false" src="https://rehangit.github.io/bilalmasjid/public/prayertimes.today.html?key=AIzaSyCq_9F8lfiTeXuj0RoPTrOg0NufmVf6qts&amp;id=1Bu1cvxeYmpLSwnx828ZEaKqJp_Ukrth6V1IWL6ws5CI&amp;hue=140"></iframe>
+      </div>
 
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.3392926055113!2d-0.3771141714189358!3d51.54334933229457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487612cd2779bb23%3A0xefece00bb3108f49!2sNortholt%20Islamic%20Centre!5e0!3m2!1sen!2sus!4v1765396012575!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
 
     <footer>
