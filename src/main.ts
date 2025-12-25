@@ -1,11 +1,22 @@
 import './assets/css/main.scss'
 
-const previousButton = document.querySelector('[data-js="previous-button"]');
-const nextButton = document.querySelector('[data-js="next-button"]');
-const images = document.querySelectorAll('.carousel__img');
+const previousButton = document.querySelector('[data-js="previous-button"]')!;
+const nextButton = document.querySelector('[data-js="next-button"]')!;
+const images = document.querySelectorAll('.carousel__img')!;
+const openMenuButton = document.querySelector('[data-js="open-button"]')!;
+const closeMenuButton = document.querySelector('[data-js="close-button"]')!;
+const nav = document.querySelector('.nav')!;
+
+openMenuButton.addEventListener('click', () => {
+  nav.classList.remove('hidden');
+});
+
+closeMenuButton.addEventListener('click', () => {
+  nav.classList.add('hidden');
+});
 
 nextButton.addEventListener('click', () => {
-  let index: number;
+  let index!: number;
 
   images.forEach((image, i) => {
     if (!image.classList.contains('hidden')) {
@@ -25,7 +36,7 @@ nextButton.addEventListener('click', () => {
 });
 
 previousButton.addEventListener('click', () => {
-  let index: number;
+  let index!: number;
 
   images.forEach((image, i) => {
     if (!image.classList.contains('hidden')) {
